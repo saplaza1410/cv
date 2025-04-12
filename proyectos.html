@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Más sobre Sergio Plaza</title>
+    <title>Proyectos de Sergio Plaza</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         /* Estilos generales y animaciones (puedes copiar del index.html) */
@@ -33,37 +33,24 @@
             transition: color 0.2s ease-in-out;
         }
 
-        /* Estilos específicos para la página "Otros" */
-        .other-section {
-            background-color: white;
-            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        /* Estilos específicos para la página de proyectos */
+        .project-card {
+            border: 1px solid #e5e7eb;
             border-radius: 0.5rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
 
-        .other-section h2 {
-            color: #4f46e5;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
-        .other-section p {
-            color: #6b7280;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .other-section ul {
-            list-style-type: disc;
-            color: #6b7280;
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .other-section li {
-            margin-bottom: 0.5rem;
+        .project-image {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9; /* Proporción común para imágenes de proyectos */
+            object-fit: cover;
         }
     </style>
 </head>
@@ -84,49 +71,84 @@
 
     <div class="container mx-auto p-8 md:p-16 mt-8">
         <header class="text-center mb-8 animate-fade-in">
-            <h1 class="text-3xl font-bold text-indigo-700 hover-scale">Más sobre Mí</h1>
-            <p class="text-lg text-gray-600 mt-2">Información adicional y otros intereses.</p>
+            <h1 class="text-3xl font-bold text-indigo-700 hover-scale">Mis Proyectos</h1>
+            <p class="text-lg text-gray-600 mt-2">Un vistazo a algunos de los proyectos en los que he trabajado.</p>
         </header>
 
-        <section class="other-section animate-fade-in animate-delay-1">
-            <h2>Educación Adicional</h2>
-            <p>Además de mi formación técnica, he realizado los siguientes cursos o certificaciones:</p>
-            <ul>
-                <li>[Nombre del Curso/Certificación 1] - [Institución/Plataforma] - [Año]</li>
-                <li>[Nombre del Curso/Certificación 2] - [Institución/Plataforma] - [Año]</li>
-                </ul>
-        </section>
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="project-card animate-fade-in animate-delay-1">
+                <img src="/images/proyecto1.jpg" alt="Proyecto 1" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 1</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 1. Tecnologías utilizadas: Laravel, React, MySQL.
+                        Enfocado en [mencionar el objetivo principal del proyecto].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
 
-        <section class="other-section animate-fade-in animate-delay-2">
-            <h2>Intereses Personales</h2>
-            <p>Fuera del desarrollo, disfruto de:</p>
-            <ul>
-                <li>[Interés 1]</li>
-                <li>[Interés 2]</li>
-                <li>[Interés 3]</li>
-                </ul>
-        </section>
+            <div class="project-card animate-fade-in animate-delay-2">
+                <img src="/images/proyecto2.jpg" alt="Proyecto 2" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 2</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 2. Tecnologías utilizadas: Ionic, Angular, Firebase.
+                        Desarrollado para [mencionar el cliente o propósito].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
 
-        <section class="other-section animate-fade-in animate-delay-3">
-            <h2>Contribuciones a la Comunidad</h2>
-            <p>He participado en las siguientes iniciativas o comunidades:</p>
-            <ul>
-                <li>[Contribución 1]</li>
-                <li>[Contribución 2]</li>
-                </ul>
-        </section>
+            <div class="project-card animate-fade-in animate-delay-3">
+                <img src="/images/proyecto3.jpg" alt="Proyecto 3" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 3</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 3. Tecnologías utilizadas: CakePHP, JavaScript, PostgreSQL.
+                        Contribuciones principales en [mencionar las áreas clave de tu participación].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
 
-        <section class="other-section animate-fade-in animate-delay-4">
-            <h2>Herramientas y Tecnologías Adicionales</h2>
-            <p>Además de las habilidades listadas, tengo experiencia con:</p>
-            <ul>
-                <li>[Herramienta/Tecnología 1]</li>
-                <li>[Herramienta/Tecnología 2]</li>
-                <li>[Herramienta/Tecnología 3]</li>
-                </ul>
-        </section>
+            <div class="project-card animate-fade-in animate-delay-4">
+                <img src="/images/proyecto4.jpg" alt="Proyecto 4" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 4</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 4. Tecnologías utilizadas: Python, Django, SQLite.
+                        Un proyecto personal enfocado en [mencionar el objetivo].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
 
-        </div>
+            <div class="project-card animate-fade-in animate-delay-5">
+                <img src="/images/proyecto5.jpg" alt="Proyecto 5" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 5</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 5. Tecnologías utilizadas: APIs REST, Docker, AWS.
+                        Responsable de [mencionar tu rol en el proyecto].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="project-card animate-fade-in animate-delay-6">
+                <img src="/images/proyecto6.jpg" alt="Proyecto 6" class="project-image">
+                <div class="p-4">
+                    <h3 class="font-semibold text-gray-800 mb-2 hover-scale">Nombre del Proyecto 6</h3>
+                    <p class="text-gray-700 leading-relaxed mb-3">
+                        Breve descripción del Proyecto 6. Tecnologías utilizadas: Make, Odoo, PostgreSQL.
+                        Automatización de [mencionar el proceso automatizado].
+                    </p>
+                    <a href="#" class="text-indigo-600 hover:text-indigo-800 font-semibold hover-scale">Ver Detalles</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer class="text-center mt-8 text-gray-500">
         <p>&copy; 2025 Sergio Plaza. Todos los derechos reservados.</p>
