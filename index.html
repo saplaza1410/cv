@@ -1,7 +1,187 @@
-<html>
-  <head>Sergio Plaza</head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Plaza - Desarrollador Full Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Animaciones CSS Personalizadas */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-  <body>
-    <h1>Sergio Andres Plaza Cuava</h1>
-  </body>
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .animate-delay-1 { animation-delay: 0.1s; }
+        .animate-delay-2 { animation-delay: 0.2s; }
+        .animate-delay-3 { animation-delay: 0.3s; }
+        .animate-delay-4 { animation-delay: 0.4s; }
+        .animate-delay-5 { animation-delay: 0.5s; }
+
+        .hover-scale:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-bar {
+            background-color: #f3f4f6;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            background-color: #4f46e5;
+            height: 0.5rem;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8 md:p-16">
+        <header class="text-center mb-8 animate-fade-in">
+            <h1 class="text-3xl font-bold text-indigo-700 hover-scale">SERGIO PLAZA</h1>
+            <p class="text-lg text-gray-600 mt-2">DESARROLLADOR FULL STACK</p>
+        </header>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 animate-fade-in animate-delay-1">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">SOBRE MÍ</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Desarrollador Full Stack con más de 5 años de experiencia en la creación de
+                arquitecturas robustas y escalables utilizando PHP (Laravel, CakePHP, Nativo).
+                Especializado en el diseño e implementación de APIs REST para la integración
+                de sistemas complejos, así como en la optimización del rendimiento en
+                entornos cloud (AWS/Docker). Poseo experiencia en el desarrollo de
+                aplicaciones móviles cross-platform con Ionic y React Native. Actualmente en
+                proceso de aprendizaje y aplicación de herramientas de automatización como
+                Make, Odoo y Python para mejorar la eficiencia en el desarrollo.
+            </p>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 animate-fade-in animate-delay-2">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">CONTACTO</h2>
+            <p class="text-gray-700">
+                <strong class="font-semibold">Teléfono:</strong> <span class="hover-scale">+34 613 71 58 84</span><br>
+                <strong class="font-semibold">Email:</strong> <span class="hover-scale">saplaza1410@gmail.com</span><br>
+                <strong class="font-semibold">Ubicación:</strong> <span class="hover-scale">Figueres, Girona, España</span>
+            </p>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 animate-fade-in animate-delay-3">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">EXPERIENCIA</h2>
+            <div class="mb-4">
+                <h3 class="font-semibold text-indigo-600 hover-scale">Desarrollador Web</h3>
+                <p class="text-gray-600">01/2025 - ACTUAL</p>
+                <p class="text-gray-700">Avantiam - ESPAÑA</p>
+                <p class="text-gray-700 leading-relaxed">Desarrollo y mantenimiento web, con énfasis en la automatización
+                    de procesos e implementación de nuevas tecnologías para
+                    optimizar la eficiencia.</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-indigo-600 hover-scale">Desarrollador Web</h3>
+                <p class="text-gray-600">06/2021 - 04/2024</p>
+                <p class="text-gray-700">Tiendapp - Colombia</p>
+                <p class="text-gray-700 leading-relaxed">Responsable del desarrollo y mantenimiento de APIs y
+                    aplicaciones (web y móviles) de la empresa, utilizando un stack
+                    tecnológico diverso que incluye Laravel, Go, Ionic y Angular.</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-indigo-600 hover-scale">Desarrollador Web</h3>
+                <p class="text-gray-600">05/2017 - 12/2021</p>
+                <p class="text-gray-700">Critic SAS - Colombia</p>
+                <p class="text-gray-700 leading-relaxed">Evolución y mejora del código fuente del core de la aplicación,
+                    desarrollado en Laravel y PHP nativo, garantizando su robustez y
+                    eficiencia.</p>
+            </div>
+            <div class="mb-4">
+                <h3 class="font-semibold text-indigo-600 hover-scale">Desarrollador Web</h3>
+                <p class="text-gray-600">12/2016 - 04/2017</p>
+                <p class="text-gray-700">Parsonic Solucions - Colombia</p>
+                <p class="text-gray-700 leading-relaxed">Desarrollo, mejora continua e implementación de nuevas
+                    funcionalidades para la aplicación interna, utilizando Laravel y PHP
+                    nativo para optimizar la eficiencia operativa.</p>
+            </div>
+            <div>
+                <h3 class="font-semibold text-indigo-600 hover-scale">Desarrollador Junior</h3>
+                <p class="text-gray-600">10/2015 - 12/2016</p>
+                <p class="text-gray-700">Strategee Group - Colombia</p>
+                <p class="text-gray-700 leading-relaxed">Creación de páginas web personalizadas para clientes, desarrollando
+                    tanto la interfaz de usuario interactiva con animaciones frontend
+                    como la lógica de servidor eficiente con CakePHP.</p>
+            </div>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 animate-fade-in animate-delay-4">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">HABILIDADES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">GIT</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">SCRUM</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">DOCKER</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">IONIC</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 75%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">LIVEWIRE</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">ALPINE</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 65%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">PYTHON</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">SQL</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">MYSQL</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">POSTGRESQL</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 80%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">ANGULAR</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700 mb-1 hover-scale">JAVASCRIPT</p>
+                    <div class="skill-bar"><div class="skill-level" style="width: 85%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 mb-8 animate-fade-in animate-delay-5">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">IDIOMAS</h2>
+            <p class="text-gray-700"><strong class="font-semibold hover-scale">Castellano:</strong> Nativo</p>
+            <p class="text-gray-700"><strong class="font-semibold hover-scale">Inglés:</strong> Básico</p>
+        </section>
+
+        <section class="bg-white shadow-md rounded-lg p-6 animate-fade-in animate-delay-5">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">OTROS</h2>
+            <p class="text-gray-700"><strong class="font-semibold hover-scale">Herramientas:</strong> MAKE, ODOO</p>
+        </section>
+
+        <footer class="text-center mt-8 text-gray-500">
+            <p>&copy; 2025 Sergio Plaza. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
 </html>
